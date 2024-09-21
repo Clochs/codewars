@@ -15,3 +15,16 @@ let isSquare = function(num) {
     } 
     return false
   }
+
+
+  // Or this 
+
+//   When the square root of n is a whole number (meaning it's an integer), Math.sqrt(n) % 1 === 0.
+// If it’s not a whole number, the remainder will not be 0, so the number isn't a perfect square.
+// Thus, the condition Math.sqrt(n) % 1 === 0 is a simple and efficient way to check if the square root is an integer, which means n is a perfect square.
+
+// This approach is both concise and very readable!
+
+  function isSquare(n) {
+    return Math.sqrt(n) % 1 === 0;
+  }
