@@ -5,12 +5,15 @@
 // My solution
 
 function distinct(a) {
-    // Callback function takes two args num and index
-    // Function compares the indexOf(first occurance of num)
-    // It compares it against against the current index
+    // Callback function takes 2 (3 possible (element, index, array)) args
+    // Function checks the first occurance of "indexOf(item)" to the current index
+    // Ex: indexOf(1) = 0 to index = 0 pass
+    // indexOf(1) = 0 to index = 1 fail
+    // indexOf(2) = 2 to index = 2 pass
     return a.filter((num, index) => a.indexOf(num) === index);
   };
 
+console.log(distinct([1, 1, 2, 3, 2, 4, 3, 5]))
 
 // A more concise version using Set()
 
