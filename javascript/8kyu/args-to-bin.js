@@ -4,7 +4,16 @@
 // My solution
 
 function arr2bin(arr) {
-    let sum = arr.reduce((total, num) => {
-        
-    })    
-}
+    // declare a new var to return at the end of the function
+    // Use reduce to return a single sum (total)
+    // Check if num is an integer and return sum
+    // If not integer, return 0
+    let newArr = arr.reduce((total, num) => {
+        return Number.isInteger(num) ? total + num : 0;
+    }, 0);
+    return newArr.toString(2);
+};
+
+console.log(arr2bin([2, 4, 6]))
+
+
