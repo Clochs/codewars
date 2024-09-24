@@ -8,6 +8,12 @@ function arr2bin(arr) {
     // Use reduce to return a single sum (total)
     // Check if num is an integer and return sum
     // If not integer, return 0
+    
+        
+    if (arr.some(num => Number.isNaN(num))) {
+        return 'NaN';
+    }
+    
     let newArr = arr.reduce((total, num) => {
         return Number.isInteger(num) ? total + num : 0;
     }, 0);
