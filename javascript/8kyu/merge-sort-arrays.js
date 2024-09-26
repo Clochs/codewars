@@ -17,8 +17,6 @@
 // Sort the array using a numeric comparator function (a, b) => a - b
 //      6 comes before 10
 function mergeArrays(arr1, arr2) {
-    // sortedArr = [...new Set(arr1.concat(arr2))];
-    // return sortedArr.sort((a, b) => a - b);
     return [...new Set(arr1.concat(arr2))].sort((a, b) => a - b);
 };
 
