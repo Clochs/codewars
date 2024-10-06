@@ -12,12 +12,16 @@
 
 
 function firstNonConsecutive(arr) {
-    console.log(arr.length)
+    // Loop through the array length - 1 to account for the 0 index.
+    // If the current iteration of 'i' (arr[i]) does not equal the previous ("-1") + 1
+    // Then return that number because it is not consecutive.
     for (let i = 1; i < arr.length - 1; i++) {
+        console.log(arr[i], arr[i - 1], arr[i - 1] + 1)
         if (arr[i] !== arr[i - 1] + 1) {
             return arr[i];
         };
     };
     return null;
 };
-console.log(firstNonConsecutive([1, 2, 3, 4, 53, 6]));
+firstNonConsecutive([1, 2, 3, 4, 53, 6]);
+// console.log(firstNonConsecutive([1, 2, 3, 4, 53, 6]));
