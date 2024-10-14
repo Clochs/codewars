@@ -12,14 +12,18 @@
 // My solution
 
 
-// Split string into an array
-// Use filter to filter out vowels using regular expressions
-
 function disemvowel(str) {
     return str
-        .split('')
-        .filter(letter => !/[aeiou]/i.test(letter))
-        .join('');
-  };
+         .split('') // Split string into an array
+         .filter(letter => !/[aeiou]/i.test(letter)) /* Iterate over each letter and return           ones that pass */
+         // test method checks for a match in a string
+         .join(''); // Join the array back to a string.
+};
 
-  console.log(disemvowel("This website is for losers LOL!"));
+
+
+// More concise and direct
+
+function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '');
+  }
