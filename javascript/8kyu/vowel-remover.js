@@ -2,6 +2,12 @@
 
 // My solution
 
+
+// Split string into an array
+// Use filter to run a function and return what passes
+// Test each letter in regex returning true/false with .test
+// Join arr back to string 
+// Return results
 function shortcut (string) {
     return string
         .split('')
@@ -13,8 +19,10 @@ function shortcut (string) {
 
   // A more concise solution
 
+
+  // Use replace to find occurances of vowels and replace them with an empty string
   function shortcut(str) {
-    return str.replace(/[aeiou]/g, '');
+    return str.replace(/[aeiou]/gi, '');
   };
 
 
