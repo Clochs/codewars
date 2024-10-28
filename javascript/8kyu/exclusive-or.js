@@ -4,9 +4,15 @@
 // My solution
 
 function xor(a, b) {
-   return a === true && b === false ||
-    b === true && a === false && 
-    a !== b ? true : false;
+    return a === true && b === false ||
+        b === true && a === false &&
+        a !== b ? true : false;
 };
 
 console.log(xor(true, false));
+
+// Much more concise version
+
+function xor(a, b) {
+    return a != b;
+};
