@@ -13,7 +13,6 @@
 
 // My solution
 
-
 function sumArray(arr) {
     // Check if arr is null or less than 3 nums, if so return 0.
     // Declare lowest and highest to hold those nums.
