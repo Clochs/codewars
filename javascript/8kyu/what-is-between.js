@@ -12,7 +12,8 @@
 // Declare empty arr
 // Use a for loop start at a
 // Count from a to b
-// Print every iteration between 
+// Add every iteration to arr
+// Return arr
 
 
 function between(a, b) {
