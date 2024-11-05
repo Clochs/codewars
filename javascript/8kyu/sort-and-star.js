@@ -6,7 +6,14 @@
 
 // My solution
 
-function twoSorts(s){
-    // Using sort() you can grab the first sorted element [0], split it into an array and join the chars seperated by ***
-    return sort()[0].split('').join('***')
-}
+function twoSort(s){
+    // Use sort to arrange the strings by ASCII value
+    // Grab the first element in the sorted array
+    // Split that value 
+    // Join it back together with *** inbetween the letters
+    console.log(s.sort()[1]);
+    return s.sort()[0].split('').join('***')
+
+};
+
+console.log(twoSorts(["hello", "you", "DO", "STinK!"]));
